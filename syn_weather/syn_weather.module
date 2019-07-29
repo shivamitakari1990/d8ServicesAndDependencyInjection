@@ -1,0 +1,3 @@
+<?php
+
+use Drupal\syn_weather;

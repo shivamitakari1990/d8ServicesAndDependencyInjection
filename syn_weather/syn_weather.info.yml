@@ -1,0 +1,6 @@
+name: Services and dependency injection examples
+type: module
+description: 'Services and dependency injection examples.'
+package: Custom
+version: 8.x
+core: 8.x

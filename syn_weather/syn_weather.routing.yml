@@ -1,0 +1,23 @@
+syn_weather.config_page:
+  path: '/services/weather'
+  defaults:
+    _controller: '\Drupal\syn_weather\controller\SynWeatherController::weatherWidget'
+    _title: 'Example weather service'
+  requirements:
+    _permission: 'access content'
+
+syn_weather.without_dependecy_injection:
+  path: '/without_dependecy_injection'
+  defaults:
+    _controller: '\Drupal\syn_weather\controller\SynWeatherController::withoutDependencyInjection'
+    _title: 'Example weather without Dependency Injection'
+  requirements:
+    _permission: 'access content'
+
+syn_weather.with_dependecy_injection:
+  path: '/with_dependecy_injection'
+  defaults:
+    _controller: '\Drupal\syn_weather\controller\SynWeatherController::withDependencyInjection'
+    _title: 'Example weather with Dependency Injection'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,9 @@
+services:
+ syn_weather.get_ais_weather:
+   class: Drupal\syn_weather\Service\GetTodaysWeatherByAIS
+ syn_weather.get_openmap_weather:
+   class: Drupal\syn_weather\Service\GetTodaysWeatherByOpenMap
+ syn_weather.get_syn_weather:
+   class: Drupal\syn_weather\Service\GetTodaysWeather
+   #arguments: ['@syn_weather.get_ais_weather']
+   arguments: ['@syn_weather.get_openmap_weather']
